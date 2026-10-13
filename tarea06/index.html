@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dominando la fuerza del CSS</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body id="inicio">
+
+    <!-- Cabecera con position: sticky -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#personajes">Personajes</a></li>
+                <li><a href="#naves">Naves</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Portada -->
+        <section class="portada">
+            <h1>Dominando la fuerza del CSS</h1>
+            <p>Posicionamiento, Filtros y Transformaciones</p>
+        </section>
+
+        <!-- Tarjetas de personajes -->
+        <section class="galeria" id="personajes">
+
+            <!-- Contenedor con position: relative -->
+            <article class="tarjeta">
+                <figure class="foto">
+                    <img src="img/Luke Skywalker 2.jpg" alt="Luke Skywalker">
+                </figure>
+                <!-- Etiqueta con position: absolute -->
+                <span class="etiqueta jedi">Jedi</span>
+                <div class="contenido">
+                    <h3>Luke Skywalker</h3>
+                    <p>El último caballero Jedi.</p>
+                </div>
+            </article>
+
+            <article class="tarjeta">
+                <figure class="foto">
+                    <img src="img/Darth Vader.jpg" alt="Darth Vader">
+                </figure>
+                <span class="etiqueta sith">Sith</span>
+                <div class="contenido">
+                    <h3>Darth Vader</h3>
+                    <p>Señor oscuro del Imperio.</p>
+                </div>
+            </article>
+
+        </section>
+
+        
+    </main>
+
+    <footer id="contacto">
+        <p>Tarea 06 - Diseño y Desarrollo Web</p>
+    </footer>
+
+    <!-- Botón con position: fixed -->
+    <a href="#inicio" class="boton-subir">&uarr;</a>
+
+</body>
+</html>
